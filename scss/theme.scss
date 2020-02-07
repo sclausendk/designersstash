@@ -1,32 +1,26 @@
 .lightui{
 	// Colors
-	--tint: #2488F5;
-	--tint-dark: #004AB1;
-	--tint-light: #3492F9;
+	--tint-1: rgba(0,255,211,0.20);
+	--tint-2: rgba(254,214,0,0.20);
+	--tint-3: rgba(0,5,255,0.20);
 
-	--label-primary: #272728;
-	--label-secondary: rgba(0,0,0,0.48);
-	--background-primary: #E9EAF2;
-	--background-secondary: #DDDEE7;
-	--seperator: rgba(0,0,0,0.17);
-	--on-tint: #FFFFFF;
-	--highlight: rgba(0,0,0,0.04);
-	--icon-stroke: #BBBBBB;
+	--label-1: rgba(13,13,13,0.99);
+	--label-2: rgba(3,3,3,0.70);
+
+	--background-1: #FFFFFF;
+	--background-2: #EEEEEE;
 }
 .darkui{
 	// Colors
-	--tint: #2488F5;
-	--tint-dark: #004AB1;
-	--tint-light: #3492F9;
+	--tint-1: rgba(0,255,211,0.20);
+	--tint-2: rgba(254,214,0,0.20);
+	--tint-3: rgba(0,5,255,0.20);
 
-	--label-primary: #FEFEFE;
-	--label-secondary: rgba(255,255,255,0.48);
-	--background-primary: #383944;
-	--background-secondary: #2D2F36;
-	--seperator: rgba(255,255,255,0.17);
-	--on-tint: #FFFFFF;
-	--highlight: rgba(255,255,255,0.04);
-	--icon-stroke: #BBBBBB;
+	--label-1: rgba(254,254,254,0.99);
+	--label-2: rgba(254,254,254,0.70);
+
+	--background-1: #0D0D0D;
+	--background-2: #EEEEEE;
 }
 
 //Utilities
