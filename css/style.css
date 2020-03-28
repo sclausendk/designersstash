@@ -1,20 +1,22 @@
 .lightui {
-  --tint-1: rgba(0,255,211,0.20);
-  --tint-2: rgba(254,214,0,0.20);
+  --tint-1: rgba(0,99,255,0.20);
+  --tint-2: rgba(255,0,83,0.20);
   --tint-3: rgba(0,5,255,0.20);
   --label-1: rgba(13,13,13,0.99);
   --label-2: rgba(3,3,3,0.70);
   --background-1: #FFFFFF;
-  --background-2: #EEEEEE; }
+  --background-2: #EEEEEE;
+  --highlight:  rgba(0,0,0,.2); }
 
 .darkui {
-  --tint-1: rgba(0,255,211,0.20);
-  --tint-2: rgba(254,214,0,0.20);
+  --tint-1: rgba(0,99,255,0.20);
+  --tint-2: rgba(255,0,83,0.20);
   --tint-3: rgba(0,5,255,0.20);
   --label-1: rgba(254,254,254,0.99);
   --label-2: rgba(254,254,254,0.70);
   --background-1: #0D0D0D;
-  --background-2: #EEEEEE; }
+  --background-2: #EEEEEE;
+  --highlight:  rgba(255,255,255,.3); }
 
 html {
   width: 100%;
@@ -32,7 +34,7 @@ body {
   position: relative;
   margin: 0px;
   padding: 0px;
-  background-color: var(--background-secondary); }
+  background-color: var(--background-1); }
 
 * {
   margin: 0px;
@@ -82,53 +84,105 @@ p {
   color: var(--label-2);
   text-align: left; }
 
+a {
+  color: var(--label-2); }
+  a:hover {
+    color: var(--label-1); }
+
 .container {
-  width: calc(100% - 64px);
+  width: calc(100% - 80px);
   max-width: 1400px;
   margin: 0px auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: calc(100% - 48px); } }
 
 .header {
   padding: 96px 0; }
   .header h1, .header h3, .header h6 {
     width: 50%; }
+    @media (max-width: 1000px) {
+      .header h1, .header h3, .header h6 {
+        width: 75%; } }
+    @media (max-width: 800px) {
+      .header h1, .header h3, .header h6 {
+        width: 100%; } }
 
-.products .product {
-  position: relative;
-  width: calc(50% - 20px);
-  height: 356px;
-  float: left;
-  padding: 40px; }
-  .products .product:nth-child(2) {
-    margin-left: 40px; }
-  .products .product:nth-child(4) {
-    margin-left: 40px; }
-  .products .product:nth-child(6) {
-    margin-left: 40px; }
-  .products .product .for-sketch {
+.products {
+  overflow: auto;
+  margin-bottom: 96px; }
+  .products .product {
     display: inline-block;
-    font-size: 14px;
-    line-height: 24px;
-    width: 60%;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    background: url(../assets/icon-sketch.svg) no-repeat top left; }
-  .products .product h2 {
-    width: 60%;
-    margin-bottom: 12px; }
-  .products .product p {
-    width: 60%;
-    margin-bottom: 12px; }
-  .products .product .button {
-    position: absolute;
-    left: 40px;
-    bottom: 40px; }
-  .products .product img {
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    right: 0px; }
+    position: relative;
+    text-decoration: none;
+    width: calc(50% - 20px);
+    height: 356px;
+    float: left;
+    padding: 32px;
+    border: solid 8px;
+    border-color: rgba(0, 0, 0, 0); }
+    .products .product:hover {
+      border-color: var(--highlight); }
+    .products .product:nth-child(2) {
+      margin-left: 40px; }
+    .products .product:nth-child(4) {
+      margin-left: 40px; }
+    .products .product:nth-child(6) {
+      margin-left: 40px; }
+    @media (max-width: 1200px) {
+      .products .product {
+        width: 100%;
+        margin-bottom: 24px; }
+        .products .product:nth-child(2) {
+          margin-left: 0px; }
+        .products .product:nth-child(4) {
+          margin-left: 0px; }
+        .products .product:nth-child(6) {
+          margin-left: 0px; } }
+    .products .product .for-sketch {
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--label-2);
+      width: 60%;
+      margin-bottom: 4px;
+      padding-left: 24px; }
+      .products .product .for-sketch img {
+        top: 0px;
+        left: 0px;
+        width: 24px; }
+    .products .product h2 {
+      width: 60%;
+      margin-bottom: 12px; }
+    .products .product p {
+      width: 60%;
+      margin-bottom: 12px; }
+    .products .product .updated {
+      color: var(--label-2); }
+    .products .product .button {
+      position: absolute;
+      left: 32px;
+      bottom: 32px; }
+    .products .product img {
+      position: absolute;
+      height: 100%;
+      top: 0px;
+      right: 0px; }
+    @media (max-width: 600px) {
+      .products .product {
+        height: 120px;
+        padding: 12px 12px 12px 80px; }
+        .products .product img {
+          left: 0px; }
+        .products .product h2 {
+          font-size: 20px;
+          line-height: 24px;
+          width: 100%; }
+        .products .product p, .products .product .button {
+          display: none; } }
 
-a.button {
+.button {
   display: inline-block;
   font-weight: 600;
   font-size: 16px;

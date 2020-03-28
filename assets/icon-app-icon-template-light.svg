@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="280px" height="356px" viewBox="0 0 280 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 63 (92418) - https://sketch.com -->
-    <title>icon-app-icon-template</title>
+    <title>icon-app-icon-template-light</title>
     <desc>Created with Sketch Beta.</desc>
-    <g id="icon-app-icon-template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="icon-app-icon-template-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-3" transform="translate(71.000000, 63.000000)">
             <g id="Group-2" transform="translate(69.000000, 115.000000) rotate(90.000000) translate(-69.000000, -115.000000) translate(-46.000000, 46.000000)">
                 <path d="M46.1499336,-1.86451255e-15 L90.8500664,1.86451255e-15 C106.897404,-1.08333549e-15 112.716556,1.670861 118.583223,4.80838867 C124.449889,7.94591634 129.054084,12.5501107 132.191611,18.4167773 C135.329139,24.283444 137,30.1025963 137,46.1499336 L137,90.8500664 C137,106.897404 135.329139,112.716556 132.191611,118.583223 C129.054084,124.449889 124.449889,129.054084 118.583223,132.191611 C112.716556,135.329139 106.897404,137 90.8500664,137 L46.1499336,137 C30.1025963,137 24.283444,135.329139 18.4167773,132.191611 C12.5501107,129.054084 7.94591634,124.449889 4.80838867,118.583223 C1.670861,112.716556 7.22223659e-16,106.897404 -1.24300837e-15,90.8500664 L1.24300837e-15,46.1499336 C-7.22223659e-16,30.1025963 1.670861,24.283444 4.80838867,18.4167773 C7.94591634,12.5501107 12.5501107,7.94591634 18.4167773,4.80838867 C24.283444,1.670861 30.1025963,1.08333549e-15 46.1499336,-1.86451255e-15 Z" id="Rectangle" stroke="#000000" stroke-width="8"></path>

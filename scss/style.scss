@@ -19,7 +19,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 
-	background-color: var(--background-secondary);
+	background-color: var(--background-1);
 }
 
 *{
@@ -77,13 +77,24 @@ p{
 	color: var(--label-2);
 	text-align: left;
 }
+a{
+	color: var(--label-2);
+
+	&:hover{
+		color: var(--label-1);
+	}
+}
 
 //Framework
 
 .container{
-	width: calc(100% - 64px);
+	width: calc(100% - 80px);
 	max-width: 1400px;
 	margin: 0px auto;
+
+	@media (max-width: 600px){
+		width: calc(100% - 48px);
+	}
 }
 
 //Header
@@ -91,20 +102,40 @@ p{
 	padding: 96px 0;
 
 	h1, h3, h6{
-		width: 50%
+		width: 50%;
+
+		@media (max-width: 1000px){
+			width: 75%;
+		}
+
+		@media (max-width: 800px){
+			width: 100%;
+		}
 	}
 }
 
 //Products
 .products{
+	overflow: auto;
+	margin-bottom: 96px;
+
 	.product{
+		display: inline-block;
 		position: relative;
+		text-decoration: none;
 
 		width: calc(50% - 20px);
 		height: 356px;
 		float: left;
 
-		padding: 40px;
+		padding: 32px;
+
+		border: solid 8px;
+		border-color: rgba(0,0,0,0);
+
+		&:hover{
+			border-color: var(--highlight);
+		}
 
 		&:nth-child(2){
 			margin-left: 40px;
@@ -116,15 +147,42 @@ p{
 			margin-left: 40px;
 		}
 
+		//Reponsive
+		@media (max-width: 1200px){
+			width: 100%;
+
+			margin-bottom: 24px;
+
+			&:nth-child(2){
+				margin-left: 0px;
+			}
+			&:nth-child(4){
+				margin-left: 0px;
+			}
+			&:nth-child(6){
+				margin-left: 0px;
+			}
+		}
+
+		//Children
+
 		.for-sketch{
+			position: relative;
 			display: inline-block;
 			font-size: 14px;
 			line-height: 24px;
+			color: var(--label-2);
+
 			width: 60%;
 			margin-bottom: 4px;
 
 			padding-left: 24px;
-			background: url(../assets/icon-sketch.svg) no-repeat top left;
+
+			img{
+				top: 0px;
+				left: 0px;
+				width: 24px;
+			}
 		}
 
 		h2{
@@ -137,12 +195,14 @@ p{
 			margin-bottom: 12px;
 		}
 
-		&updated{}
+		.updated{
+			color: var(--label-2);
+		}
 
 		.button{
 			position: absolute;
-			left: 40px;
-			bottom: 40px;
+			left: 32px;
+			bottom: 32px;
 		}
 
 		img{
@@ -151,11 +211,29 @@ p{
 			top: 0px;
 			right: 0px;
 		}
+
+		@media (max-width: 600px){
+			height: 120px;
+			padding:  12px 12px 12px 80px;
+
+			img{
+				left: 0px;
+			}
+			h2{
+				font-size: 20px;
+				line-height: 24px;
+				width: 100%;
+			}
+
+			p, .button{
+				display: none;
+			}
+		}
 	}
 }
 
 //Buttons
-a.button{
+.button{
 	display: inline-block;
 	font-weight: 600;
 	font-size: 16px;

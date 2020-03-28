@@ -9,35 +9,87 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/assets/icon-app-icon-template.svg": {
+	"/assets/icon-app-icon-template-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/icon-app-icon-template.svg",
+		"oAP": "/assets/icon-app-icon-template-dark.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/icon-color-system-plugin.svg": {
+	"/assets/icon-app-icon-template-light.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/icon-color-system-plugin.svg",
+		"oAP": "/assets/icon-app-icon-template-light.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/icon-sketch.svg": {
+	"/assets/icon-color-system-plugin-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/icon-sketch.svg",
+		"oAP": "/assets/icon-color-system-plugin-dark.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/icon-color-system-plugin-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/icon-color-system-plugin-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/icon-sketch-dark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/icon-sketch-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/icon-sketch-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/icon-sketch-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/shareimage.png": {
+		"ft": 32768,
+		"iS": 141564,
+		"oA": 0,
+		"oAP": "/assets/shareimage.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/core-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/core-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/core.js": {
 		"bF": 0,
