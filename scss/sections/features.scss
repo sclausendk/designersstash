@@ -1,0 +1,50 @@
+section.features{
+    @include container(grid);
+
+    h2{
+        @include text-headline-1;
+        color: var(--label-1);
+        width: calc(100% - (5 * var(--unit)));
+        margin-left: calc(2.5 * var(--unit));
+        margin-bottom: calc(5 * var(--unit));
+    }
+
+    article{
+        margin: calc(2 * var(--unit)) calc(2.5 * var(--unit));
+
+        h3{
+            @include text-headline-3;
+            color: var(--label-1);
+            margin-bottom: var(--unit);
+        }
+        p{
+            @include text-body-1;
+            color: var(--label-3);
+        }
+        
+        //3 columns
+        width: calc(33% - (6 * var(--unit)));
+
+        //2 columns
+        @media (max-width: 1000px){
+            width: calc(50% - 2.5em);
+        }
+        //1 column
+        @media (max-width: 600px){
+            width: 100%;
+        }
+    }
+
+    &.icons{
+        img{
+            height: 2.5em;
+            width: 2.5em;
+            float: left;
+
+            margin-right: 0.5em;
+        }
+        p{
+            margin-left: 3em;
+        }
+    }
+}

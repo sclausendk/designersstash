@@ -9,6 +9,26 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/assets/color-system/icon-color-system-dark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/color-system/icon-color-system-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/color-system/icon-color-system-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/color-system/icon-color-system-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/icon-app-icon-template-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -29,26 +49,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/icon-color-system-plugin-dark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/icon-color-system-plugin-dark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/icon-color-system-plugin-light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/icon-color-system-plugin-light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
 	"/assets/icon-sketch-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -64,6 +64,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/icon-sketch-light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/noter/icon-noter-dark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/noter/icon-noter-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/noter/icon-noter-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/noter/icon-noter-light.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -120,6 +140,43 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/product-color-system.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/product-color-system.html",
+		"oF": 0
+		},
+	"/product-noter.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/product-noter.html",
+		"oF": 0
+		},
+	"/product.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/product.html",
+		"oF": 0
+		},
+	"/scss/components/_components.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_components.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/components/buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -146,7 +203,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/scss/components/components.scss": {
+	"/scss/core/framework.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -154,33 +211,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/css/components.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/components/frontpage-header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/css/frontpage-header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/scss/components/section-features.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/css/section-features.css",
+		"oAP": "/css/framework.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -211,6 +242,97 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/sections/_sections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/features.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/features.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/frontpage-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/frontpage-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/key-points.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/key-points.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/product-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/product-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/product-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/product-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/updates.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/updates.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -223,6 +345,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/sections.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sections.html",
+		"oF": 0
 		}
 	},
 "hooks": [

@@ -1,0 +1,24 @@
+section.key-points{
+    @include container(grid);
+
+    article{
+        margin: 1em 1.25em;
+
+        h3{
+            @include text-headline-2;
+            color: var(--label-1);
+        }
+        h4{
+            @include text-body-1;
+            color: var(--label-3);
+        }
+        
+        //3 columns
+        width: calc(33% - 2.5em);
+
+        //1 column
+        @media (max-width: 1000px){
+            width: 100%;
+        }
+    }
+}

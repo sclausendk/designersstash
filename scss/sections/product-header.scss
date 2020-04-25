@@ -1,0 +1,85 @@
+section.product-header{
+    @include container;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+
+    h1{
+        @include text-headline-1;
+        color: var(--label-1);
+        margin-bottom: 0.2em;
+
+        width: calc(50% - (4 * var(--unit)));
+        margin-left: calc(8.33% + (6 * var(--unit)))
+    }
+    p{
+        @include text-body-1;
+        color: var(--label-2);
+        margin-bottom: 1em;
+        width: calc(50% - (4 * var(--unit)));
+        margin-left: calc(8.33% + (6 * var(--unit)))
+    }
+    a.button{
+        @include button(large);
+        margin-left: calc(8.33% + (6 * var(--unit)));
+    }
+    img{
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(8.33% + (6 * var(--unit)));
+    }
+    span.tint{
+        position: absolute;
+        width: 12.5vw;
+        height: 25vw;
+        background: var(--tint);
+
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(8.33% + (6 * var(--unit)));
+    }
+
+    //Tablet
+    @media (max-width: 1000px){
+		h1, p{
+            width: calc(83.33% - (4 * var(--unit)));
+            margin-left: 0;
+        }
+        a.button{
+            margin-left: 0;
+        }
+        img{
+            right: auto;
+            left: auto;
+        }
+        span.tint{
+            right: 0px;
+        }
+    }
+    //Mobile
+    @media (max-width: 600px){
+        padding-top: 50vh;
+        padding-bottom: 10vh;
+
+		h1, p{
+            width: 100%;
+            margin-left: 0;
+        }
+        a.button{
+            margin-left: 0;
+        }
+        img{
+            top: 40%;
+            left: 1.25em;
+            right: auto;
+        }
+        span.tint{
+            top: 40%;
+            left: calc(12.5vw + 1.25em);
+            right: auto;
+        }
+	}
+}

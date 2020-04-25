@@ -1,11 +1,43 @@
 //Buttons
-.button{
-	display: inline-block;
-	@include text-button-1;
-	text-decoration: none;
-	color: var(--background-1);
+@mixin button($size: 'medium'){
+	@if $size == 'small'{
+		display: inline-block;
+		@include text-button-1;
+		text-decoration: none;
+		color: var(--background-1);
 
-	padding: 8px 12px;
-	
-	background-color: var(--label-1);
+		padding: calc(0.5 * var(--unit)) calc(1 * var(--unit));
+		
+		background-color: var(--label-1);
+	}
+	@if $size == 'medium'{
+		display: inline-block;
+		@include text-button-1;
+		text-decoration: none;
+		color: var(--background-1);
+
+		padding: var(--unit) calc(2 * var(--unit));
+		
+		background-color: var(--label-1);
+	}
+	@if $size == 'large'{
+		display: inline-block;
+		@include text-button-1;
+		text-decoration: none;
+		color: var(--background-1);
+
+		padding: calc(2 * var(--unit)) calc(3 * var(--unit));
+		
+		background-color: var(--label-1);
+	}
+	transition: box-shadow .05s, transform .1s;
+
+	&:hover{
+		box-shadow: -8px 8px 0px var(--tint);
+		transform: translate(8px, -8px);
+	}
+	&:active{
+		box-shadow: -4px 4px 0px var(--tint);
+		transform: translate(4px, -4px);
+	}
 }

@@ -1,7 +1,7 @@
 
 //Header
 .header{
-	padding: 96px 0;
+	@include container;
 
 	h1{
 		@include text-headline-1;

@@ -1,6 +1,6 @@
 
 body{
-    font-size: 16px;
+    font-size: calc(2 * var(--unit));
 	font-family:  urbane, sans-serif;
 	line-height: 1.3em;
 }
@@ -20,7 +20,7 @@ body{
 //Headline 3
 @mixin text-headline-3{
 	font-size: 1.5em;
-    line-height: 1.75em;
+    line-height: 1.35em;
     font-weight: 500;
 }
 //Headline 4

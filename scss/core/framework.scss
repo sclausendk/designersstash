@@ -1,0 +1,40 @@
+//Main section with inset
+@mixin container($type: default){
+	position: relative;
+	width: calc(100% - 80px);
+	max-width: 1400px;
+    margin: 0px auto;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+
+	@media (max-width: 600px){
+		width: 100%;
+	}
+
+	@if $type == 'grid' {
+		@include grid;
+	}
+}
+
+//Layout for section – Grid
+@mixin grid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+//Group sections in blox to control background color
+.block{
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+	//Product Theme
+	&.tint{
+		background-color: var(--tint);
+	}
+}
