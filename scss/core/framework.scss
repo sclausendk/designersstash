@@ -1,7 +1,7 @@
 //Main section with inset
 @mixin container($type: default){
 	position: relative;
-	width: calc(100% - 80px);
+	width: calc(100% - calc(10 * var(--unit)));
 	max-width: 1400px;
     margin: 0px auto;
 	padding-top: 5em;
