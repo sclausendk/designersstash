@@ -1,4 +1,6 @@
-@import "theme.scss";
+@import "core/theme.scss";
+@import "core/typography.scss";
+@import "components/components.scss";
 
 html{
 	width: 100%;
@@ -10,10 +12,6 @@ html{
 body{
 	height: 100%;
 	width: 100%;
-
-	font-size: 13px;
-	font-family:  urbane, sans-serif;
-	line-height: 1.3em;
 
 	position: relative;
 	margin: 0px;
@@ -37,53 +35,6 @@ body{
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-//Typography
-h1{
-	font-weight: 600;
-	font-size: 50px;
-	line-height: 56px;
-	color: var(--label-1);
-	text-align: left;
-
-	margin-bottom: 24px;
-}
-h2{
-	font-weight: 500;
-	font-size: 32px;
-	line-height: 40px;
-	color: var(--label-1);
-	text-align: left;
-}
-h3{
-	font-weight: 500;
-	font-size: 22px;
-	line-height: 36px;
-	color: var(--label-2);
-	text-align: left;
-
-	margin-bottom: 24px;
-}
-h6{
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 36px;
-	color: var(--label-2);
-	text-align: left;
-}
-p{
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 28px;
-	color: var(--label-2);
-	text-align: left;
-}
-a{
-	color: var(--label-2);
-
-	&:hover{
-		color: var(--label-1);
-	}
-}
 
 //Framework
 
@@ -95,153 +46,4 @@ a{
 	@media (max-width: 600px){
 		width: calc(100% - 48px);
 	}
-}
-
-//Header
-.header{
-	padding: 96px 0;
-
-	h1, h3, h6{
-		width: 50%;
-
-		@media (max-width: 1000px){
-			width: 75%;
-		}
-
-		@media (max-width: 800px){
-			width: 100%;
-		}
-	}
-}
-
-//Products
-.products{
-	overflow: auto;
-	margin-bottom: 96px;
-
-	.product{
-		display: inline-block;
-		position: relative;
-		text-decoration: none;
-
-		width: calc(50% - 20px);
-		height: 356px;
-		float: left;
-
-		padding: 32px;
-
-		border: solid 8px;
-		border-color: rgba(0,0,0,0);
-
-		&:hover{
-			border-color: var(--highlight);
-		}
-
-		&:nth-child(2){
-			margin-left: 40px;
-		}
-		&:nth-child(4){
-			margin-left: 40px;
-		}
-		&:nth-child(6){
-			margin-left: 40px;
-		}
-
-		//Reponsive
-		@media (max-width: 1200px){
-			width: 100%;
-
-			margin-bottom: 24px;
-
-			&:nth-child(2){
-				margin-left: 0px;
-			}
-			&:nth-child(4){
-				margin-left: 0px;
-			}
-			&:nth-child(6){
-				margin-left: 0px;
-			}
-		}
-
-		//Children
-
-		.for-sketch{
-			position: relative;
-			display: inline-block;
-			font-size: 14px;
-			line-height: 24px;
-			color: var(--label-2);
-
-			width: 60%;
-			margin-bottom: 4px;
-
-			padding-left: 24px;
-
-			img{
-				top: 0px;
-				left: 0px;
-				width: 24px;
-			}
-		}
-
-		h2{
-			width: 60%;
-			margin-bottom: 12px;
-		}
-
-		p{
-			width: 60%;
-			margin-bottom: 12px;
-		}
-
-		.updated{
-			color: var(--label-2);
-		}
-
-		.button{
-			position: absolute;
-			left: 32px;
-			bottom: 32px;
-		}
-
-		img{
-			position: absolute;
-			height: 100%;
-			top: 0px;
-			right: 0px;
-		}
-
-		@media (max-width: 600px){
-			height: 120px;
-			padding:  12px 12px 12px 80px;
-
-			img{
-				left: 0px;
-			}
-			h2{
-				font-size: 20px;
-				line-height: 24px;
-				width: 100%;
-			}
-
-			p, .button{
-				display: none;
-			}
-		}
-	}
-}
-
-//Buttons
-.button{
-	display: inline-block;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 20px;
-	text-decoration: none;
-	color: var(--background-1);
-
-	padding: 8px 12px;
-	
-	background-color: var(--label-1);
 }
