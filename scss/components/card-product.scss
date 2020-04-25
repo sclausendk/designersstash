@@ -1,0 +1,122 @@
+
+//Products
+.products{
+	overflow: auto;
+	margin-bottom: 96px;
+
+	.product{
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+
+		width: calc(50% - 20px);
+		height: 356px;
+		float: left;
+
+		padding: 32px;
+
+		border: solid 8px;
+		border-color: rgba(0,0,0,0);
+
+		&:hover{
+			border-color: var(--highlight);
+		}
+
+		&:nth-child(2){
+			margin-left: 40px;
+		}
+		&:nth-child(4){
+			margin-left: 40px;
+		}
+		&:nth-child(6){
+			margin-left: 40px;
+		}
+
+		//Reponsive
+		@media (max-width: 1200px){
+			width: 100%;
+
+			margin-bottom: 24px;
+
+			&:nth-child(2){
+				margin-left: 0px;
+			}
+			&:nth-child(4){
+				margin-left: 0px;
+			}
+			&:nth-child(6){
+				margin-left: 0px;
+			}
+		}
+
+		//Children
+
+		.for-sketch{
+			position: relative;
+			display: inline-block;
+			@include text-body-2;
+			color: var(--label-2);
+
+			width: 60%;
+			margin-bottom: 4px;
+
+			padding-left: 24px;
+
+			img{
+				top: 0px;
+				left: 0px;
+				width: 24px;
+			}
+		}
+
+		h2{
+			@include text-headline-2;
+			color: var(--label-1);
+			width: 60%;
+			margin-bottom: 0.8em;
+		}
+
+		p{
+			@include text-body-1;
+			color: var(--label-2);
+			width: 60%;
+			margin-bottom: 0.8em;
+		}
+
+		.updated{
+			@include text-body-2;
+			color: var(--label-3);
+		}
+
+		.button{
+			position: absolute;
+			left: 32px;
+			bottom: 32px;
+		}
+
+		img{
+			position: absolute;
+			height: 100%;
+			top: 0px;
+			right: 0px;
+		}
+
+		@media (max-width: 600px){
+			height: 120px;
+			padding:  12px 12px 12px 80px;
+
+			img{
+				left: 0px;
+			}
+			h2{
+				font-size: 20px;
+				line-height: 24px;
+				width: 100%;
+			}
+
+			p, .button{
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+
+body{
+    font-size: 16px;
+	font-family:  urbane, sans-serif;
+	line-height: 1.3em;
+}
+
+//Headline 1
+@mixin text-headline-1{
+	font-size: 3.25em;
+    line-height: 1.25em;
+    font-weight: 600;
+}
+//Headline 2
+@mixin text-headline-2{
+	font-size: 2em;
+    line-height: 1.25em;
+    font-weight: 500;
+}
+//Headline 3
+@mixin text-headline-3{
+	font-size: 1.5em;
+    line-height: 1.75em;
+    font-weight: 500;
+}
+//Headline 4
+@mixin text-headline-4{
+	font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+//Body 1
+@mixin text-body-1{
+	font-size: 1em;
+    line-height: 1.75em;
+    font-weight: 500;
+}
+
+//Body 2
+@mixin text-body-2{
+	font-size: 0.9em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+//Button 1
+@mixin text-button-1{
+	font-size: 1em;
+    line-height: 1.24em;
+    font-weight: 600;
+}
+
+
+
+a{
+	color: var(--label-2);
+
+	&:hover{
+		color: var(--label-1);
+	}
+}

@@ -1,0 +1,11 @@
+//Buttons
+.button{
+	display: inline-block;
+	@include text-button-1;
+	text-decoration: none;
+	color: var(--background-1);
+
+	padding: 8px 12px;
+	
+	background-color: var(--label-1);
+}

@@ -1,0 +1,49 @@
+
+//Header
+.header{
+	padding: 96px 0;
+
+	h1{
+		@include text-headline-1;
+		color: var(--label-1);
+		margin-bottom: 0.75em;
+		width: 50%;
+
+		@media (max-width: 1000px){
+			width: 75%;
+		}
+
+		@media (max-width: 800px){
+			width: 100%;
+		}
+		
+	}
+	h2{
+		@include text-headline-3;
+		color: var(--label-2);
+		margin-bottom: 1em;
+		width: 50%;
+
+		@media (max-width: 1000px){
+			width: 75%;
+		}
+
+		@media (max-width: 800px){
+			width: 100%;
+		}
+	}
+	p{
+		@include text-headline-4;
+		color: var(--label-3);
+
+		width: 50%;
+
+		@media (max-width: 1000px){
+			width: 75%;
+		}
+
+		@media (max-width: 800px){
+			width: 100%;
+		}
+	}
+}
